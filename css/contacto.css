@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana */
+}
+
+
+/* Estilos para el main */
+main {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+/* Estilos para el contenedor de los divs */
+.container {
+    font-size: 0; /* Elimina el espacio entre los elementos inline-block */
+    padding: 0px;
+    margin: 0px;
+    flex: 1;    
+}
+
+/* Estilos para los divs */
+.box {
+    display: inline-block; /* Muestra los elementos en línea */
+    vertical-align: top; /* Alinea los elementos arriba */
+    width: 48%; /* Ocupa el 50% del ancho de la pantalla */
+    height: 60vh;
+    background-color: rgba(57, 202, 250, 0.5);
+    margin: 1px; /* Espacio entre los divs */
+    font-size: 16px; /* Restablece el tamaño de la fuente para los elementos inline-block */
+}
+h1 {
+    color:black;
+    text-align: center; /* Alinea los elementos hijos al centro horizontalmente */
+}
+
+.nombre, .correo, .subject  {
+    padding: 10px;
+    width: 25vw;
+    border: red solid 1px;
+}
+
+.msg {
+    padding: 10px;
+    width: 80%;
+    border: red solid 1px;
+}
+
+/* Edito parametros por los ID */
+#name, #email, #asunto, #mensaje {
+    width: 80%;
+    height: 30px;
+    position: relative;
+    padding: 0;
+    border-radius: 5px;
+
+
+}
+
+#mensaje {
+    height: 150px;
+    text-align:start;
+    vertical-align: text-top;
+    vertical-align:baseline;
+}    
+
+.info {
+    padding-left: 15px;
+}
+
+.btn{
+    padding: 10px;
+    position: relative;
+    left: 10px;
+}
