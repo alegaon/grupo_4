@@ -1,0 +1,146 @@
+.header {
+    background: none;
+
+    width: 100%;
+    max-height: var(--heigth-altura);
+
+    border: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+.shadow-header {
+    width: 100%;
+    height: var(--heigth-altura);
+
+    /* border: 1px solid var(--color-primario-fuerte); */
+
+    filter: blur(3px) contrast(200%) hue-rotate(90deg);
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+
+.grad1 {
+    width: 100%;
+    height: var(--heigth-altura);
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(black, white);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    opacity: .22;
+
+    z-index: -2;
+    
+}
+
+.caja-header-izq , .caja-header-der{
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* caja izquierda */
+.logo {
+    margin-right: 50px ;
+
+}
+
+.logo a img {
+    width: 35px;
+    background: var(--color-blanco);
+    color: var(--color-blanco);
+}
+
+.contenedor-nav .nav-links{
+    display: flex;
+    gap: 50px;
+
+}
+
+.contenedor-nav .nav-links a {
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.contenedor-nav .nav-links a:visited {
+    color: var(--color-blanco);
+}
+
+.contenedor-nav .nav-links a:active {
+    color: var(--color-primario-fuerte);
+}
+/* fin caja izquierda */
+
+
+/* caja derecha */
+
+.caja-header-der {
+    margin-right: 30px;
+    padding: 0;
+
+    width: 400px;
+
+    /* border: 2px solid var(--color-primario-fuerte); */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.search-input-box {
+    
+    max-width: 50px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; */
+
+    position: relative;
+    top:50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.user_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.user_container div a{
+    color: var(--color-blanco);
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.enlace:visited {
+    color: var(--color-blanco);
+}
+
+.enlace:active {
+    color: var(--color-primario-fuerte);
+}

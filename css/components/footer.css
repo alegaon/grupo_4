@@ -1,0 +1,53 @@
+.footer {
+    background: none;
+    
+    color: var(--color-blanco);
+
+    width: 100%;
+    height: var(--heigth-footer);
+
+    border: none;
+
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.shadow-footer {
+    width: 100%;
+    height: var(--heigth-footer);
+
+    /* border: 1px solid var(--color-primario-fuerte); */
+
+    filter: blur(3px) contrast(200%) hue-rotate(90deg);
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+.grad1-footer {
+    width: 100%;
+    height: var(--heigth-footer);
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--color-primario-suave), var(--color-secundario));
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    opacity: .11;
+
+    z-index: 0;
+    
+}
