@@ -1,0 +1,69 @@
+.main {
+    z-index: 1;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+  }
+  
+  .articulo {
+    width: calc(31% - 20px); 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border: 2px solid #4d1dbb; 
+    border-radius: 10px; 
+    background-color: rgb(202, 245, 202)}
+    
+  
+  
+  .imagen img {
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    
+  }
+  
+  .articulo .iconos i {
+    color: gray; /* Color por defecto de los iconos */
+    transition: color 0.3s; /* Transición suave de color */
+  }
+  
+  .articulo .iconos i:hover {
+    color: red; /* Color que cambiará al pasar el mouse sobre los iconos */
+  }
+  
+  
+  .articulo h2 {
+    margin-top: 0; 
+    text-align: center;
+    color: rgb(65, 94, 189);
+  
+  }
+  
+  .articulo p {
+    margin-bottom: 10px; 
+    text-align: center;
+    color: rgb(26, 139, 73);
+  }
+  
+  .articulo a {
+    display: block; 
+    text-align: center; 
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px;
+    text-decoration: none; 
+    border-radius: 5px;
+    
+  }
+  
+  .articulo a:hover {
+    background-color: #0056b3; 
+  }
+  
+  .mapa {
+    text-align: center;
+  }
