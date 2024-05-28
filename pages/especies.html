@@ -1,51 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/index.css">
-        <script
-            src = "http://kit.fontawesome.com/81581fb069.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>dePEsca</title>
-    </head>
-    <body>
-        <header class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dePEsca</title>
+
+    <!-- css index -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    
+    <!-- css main -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+    <!-- css general -->
+    <!-- <link rel="stylesheet" href="css/index/general.css"> -->
+
+    <!-- css google font (components) -->
+    <link rel="stylesheet" href="../css/components/font.css">
+    <!-- css base (components) -->
+    <link rel="stylesheet" href="../css/components/base.css">
+    <!-- body video  background -->
+    <link rel="stylesheet" href="../css/components/video-bg.css">
+    <!-- css header (components) -->
+    <link rel="stylesheet" href="../css/components/header.css">
+    <!-- css main (components) -->
+    <link rel="stylesheet" href="../css/components/main.css">
+    <!-- css footer (components) -->
+    <link rel="stylesheet" href="../css/components/footer.css">
+
+    <!-- javascript -->
+    <script
+        src = "http://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+    ></script>
+
+</head>
+<!-- fin head -->
+
+<!-- body -->
+<body>
+    <!-- video de fondo -->
+    <div class="video-background">
+            <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
+            <iframe 
+                src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen
+            ></iframe>
+      </div>
+    <!-- header -->
+    <header class="header contenedores">
+        <!-- sobras header -->
+        <div class="shadow-header"></div>
+        <div class="grad1"></div>
+        <!-- caja izq -->
+        <div class="caja-header-izq">
+            <!-- logo -->
             <div class="logo">
                 <a href="../index.html">
                     <img src="../img/logo.svg" alt="falta imagen">
                 </a>
             </div>
-            <nav>
-                <ul class="nav-links">              
-                    <li><a href="destacados.html">Destacados</a></li>
+            <!-- navbar -->
+            <nav class="contenedor-nav">
+                <ul class="nav-links">
                     <li><a href="especies.html">Especies</a></li>
                     <li><a href="lugares.html">Lugares</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="about.html">Nosotros</a></li>
                 </ul>
             </nav>
+        </div>
+        <!-- fin caja izq -->
+        <!-- caja der -->
+        <div class="caja-header-der">
+            <!-- buscador -->
             <div class="search-container">
                 <div class="search-input-box">
                     <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
                     <a href="#"> <!--target="_blank">-->
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </a>
-                </div>                            
+                </div>
             </div>
+
+            <!-- usuario menu -->
             <div class="user_container">
                 <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
                 <div class="btn_login">
-                    <a href="login.html">Iniciar Sesion</a>
+                    <a class="enlace" href="login.html">Ingresar</a>
                 </div>
                 <div class="btn_signup">
-                    <a href="registro.html">Registrar</a>
+                    <a class="enlace" href="registro.html">Registrarse</a>
                 </div>
-            </div> 
-        </header>
-        <main>
-            
-        </main>
-    </body>
+            </div>
+        </div>
+        <!-- fin caja der -->
+    </header>
+    <!-- fin header -->
+
+    <!-- main -->
+    <main class="main">
+   
+    </main>
+    <!-- fin main -->
+
+    <!-- footer -->
+    <footer class="footer contenedores" >
+        <div class="shadow-footer"></div>
+        <div class="grad1-footer"></div>
+        <p>Todos los derechos reservados &#169 2024</p>
+    </footer>
+    <!-- fin footer -->
+
+</body>
+<!-- fin body -->
 </html>

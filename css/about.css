@@ -1,0 +1,19 @@
+body {
+    /* Cambia esta ruta a la de tu imagen */
+    background-image: url('../img/los_3.jpg');
+    /* Asegura que la imagen cubra toda el área del body */
+    background-size: cover;
+}
+
+h1, h3 {
+    margin: 10px;
+    padding: 5px;
+    color: rgb(13, 110, 253);
+    border-color: black;
+}
+
+img {
+    margin: 10px;
+    padding: 5px;
+    min-width: 90%;
+}

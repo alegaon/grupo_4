@@ -1,83 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/index.css">
-        <!-- link css main -->
-        <link rel="stylesheet" href="../css/contacto.css">
-        <script
-            src = "http://kit.fontawesome.com/81581fb069.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>dePEsca</title>
-    </head>
-    <body>
-        <header class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dePEsca</title>
+
+    <!-- css index -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    
+    <!-- css main -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+    <!-- css general -->
+    <!-- <link rel="stylesheet" href="css/index/general.css"> -->
+
+    <!-- css google font (components) -->
+    <link rel="stylesheet" href="../css/components/font.css">
+    <!-- css base (components) -->
+    <link rel="stylesheet" href="../css/components/base.css">
+    <!-- body video  background -->
+    <link rel="stylesheet" href="../css/components/video-bg.css">
+    <!-- css header (components) -->
+    <link rel="stylesheet" href="../css/components/header.css">
+    <!-- css main (components) -->
+    <link rel="stylesheet" href="../css/components/main.css">
+    <!-- css footer (components) -->
+    <link rel="stylesheet" href="../css/components/footer.css">
+
+        <!-- css footer (components) -->
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <!-- javascript -->
+    <script
+        src = "http://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+    ></script>
+
+</head>
+<!-- fin head -->
+
+<!-- body -->
+<body>
+    <!-- video de fondo -->
+    <div class="video-background">
+            <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
+            <iframe 
+                src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen
+            ></iframe>
+      </div>
+    <!-- header -->
+    <header class="header contenedores">
+        <!-- sobras header -->
+        <div class="shadow-header"></div>
+        <div class="grad1"></div>
+        <!-- caja izq -->
+        <div class="caja-header-izq">
+            <!-- logo -->
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
                     <img src="../img/logo.svg" alt="falta imagen">
                 </a>
             </div>
-            <nav>
-                <ul class="nav-links">              
-                    <li><a href="destacados.html">Destacados</a></li>
+            <!-- navbar -->
+            <nav class="contenedor-nav">
+                <ul class="nav-links">
                     <li><a href="especies.html">Especies</a></li>
                     <li><a href="lugares.html">Lugares</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="about.html">Nosotros</a></li>
                 </ul>
             </nav>
+        </div>
+        <!-- fin caja izq -->
+        <!-- caja der -->
+        <div class="caja-header-der">
+            <!-- buscador -->
             <div class="search-container">
                 <div class="search-input-box">
                     <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
                     <a href="#"> <!--target="_blank">-->
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </a>
-                </div>                            
+                </div>
             </div>
+
+            <!-- usuario menu -->
             <div class="user_container">
                 <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
                 <div class="btn_login">
-                    <a href="login.html">Iniciar Sesion</a>
+                    <a class="enlace" href="login.html">Ingresar</a>
                 </div>
                 <div class="btn_signup">
-                    <a href="registro.html">Registrar</a>
+                    <a class="enlace" href="registro.html">Registrarse</a>
                 </div>
-            </div> 
-        </header>
-        <main>
-            <!-- Formulario de Contacto -->
-            <form class="login-frm">
-                <h1>Formulario para consultas</h1>
-                <div class="container">
-                    <div class="box">
-                        <div class="info">
-                            <h4 class="info">consultas@correo.com</h4>
-                        </div>
+            </div>
+        </div>
+        <!-- fin caja der -->
+    </header>
+    <!-- fin header -->
+
+    <!-- main -->
+    <main>
+        <!-- Formulario de Contacto -->
+        <div class="container">
+            <div class="contact-info">
+                <h1>Contacto</h1>
+                <p class="icon-text"> 
+                <img src="../img/icons/mail.svg" alt="email">
+                <span>depesca@gmail.com</span>
+                </p>
+                <p class="icon-text"> 
+                    <img src="../img/icons/phone-solid.svg" alt="telefono">                    
+                    <span>+549777123456</span>
+                </p>
+                <p class="icon-text">
+                    <img src="../img/icons/location.svg" alt="localidad">                    
+                    <span>Calle Argento 123</span>
+                </p>
+            </div>
+            <div class="contact-form-container">
+                <h1>Formulario de Contacto</h1>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="box">
-                        <div class="nombre">
-                            <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="given-name" required>
-                        </div>
-                        <div class="correo">
-                            <input type="email" id="email" name="email" placeholder="Correo electronico" required>
-                        </div>
-                        <div class="subject">    
-                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
-                        </div>
-                        <div class="msg">    
-                            <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje" required>
-                        </div>
-                        <div class="btn">
-                            <button type="submit">Enviar</button>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-            </form>
-        </main>
-        <footer>
-            <p>Todos los derechos reservados &#169 2024</p>
-        </footer>
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" resize = none required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- fin main -->
     </body>
 </html>

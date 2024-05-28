@@ -61,20 +61,23 @@
 
 .logo a img {
     width: 35px;
-    background: var(--color-blanco);
+    background: transparent;
     color: var(--color-blanco);
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 .contenedor-nav .nav-links{
     display: flex;
     gap: 50px;
-
 }
 
 .contenedor-nav .nav-links a {
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
 .contenedor-nav .nav-links a:visited {
@@ -83,6 +86,12 @@
 
 .contenedor-nav .nav-links a:active {
     color: var(--color-primario-fuerte);
+}
+
+.contenedor-nav .nav-links li:hover {
+    transition: 0.3s;
+    color: #025259;
+    transform: scale(1.25);
 }
 /* fin caja izquierda */
 
@@ -93,9 +102,7 @@
     margin-right: 30px;
     padding: 0;
 
-    width: 400px;
-
-    /* border: 2px solid var(--color-primario-fuerte); */
+    width: 600px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,24 +111,43 @@
 
 .search-input-box {
     
-    max-width: 50px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px; */
+    max-width: 600px;
+    width: 100%;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
 
-    position: relative;
-    top:50%;
-    left: 50%;
+.search-input-box input {
+    width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	height: 35px;
+	padding: 0 60px 0 20px;
+	font-size: 14px;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
+/* Configuro la lupita para que quede 
+adosada al cuadro de busqueda */
+.icon {
+    position: absolute;
+	top: 7px;
+	right: 15px;
+	font-size: 22px;
+	cursor: pointer;
+	color: #0d141f;
+}
+
+.nav-icon-buscar::before {
+    content: url("../img/search-regular-24.png");
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .user_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -137,6 +163,28 @@
     flex-direction: row;
 
 }
+.btn_signup, .btn_login {
+    margin-left: 0px;
+    position: relative;
+    float: left;
+    min-height: 20px;
+    padding: 10px;
+}
+
+.btn_signup a, .btn_login a {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.btn_signup a:hover, .btn_login a:hover {
+    transition: 0.3s;
+    /*color: #025259;*/
+    transform: scale(1.25);
+}
+
 .enlace:visited {
     color: var(--color-blanco);
 }

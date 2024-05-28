@@ -3,55 +3,140 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/index.css">
-        <!-- link css main -->
+        <title>dePEsca</title>
+
+        <!-- css index -->
+        <!-- <link rel="stylesheet" href="css/index.css"> -->
+        
+        <!-- css main -->
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        
+        <!-- css general -->
+        <!-- <link rel="stylesheet" href="css/index/general.css"> -->
+
+        <!-- css google font (components) -->
+        <link rel="stylesheet" href="../css/components/font.css">
+        <!-- css base (components) -->
+        <link rel="stylesheet" href="../css/components/base.css">
+        <!-- body video  background -->
+        <link rel="stylesheet" href="../css/components/video-bg.css">
+        <!-- css header (components) -->
+        <link rel="stylesheet" href="../css/components/header.css">
+        <!-- css main (components) -->
+        <link rel="stylesheet" href="../css/components/main.css">
+        <!-- css footer (components) -->
+        <link rel="stylesheet" href="../css/components/footer.css">
+
+        <!-- css articulos -->
         <link rel="stylesheet" href="../css/registro.css">
+        <!-- javascript -->
         <script
             src = "http://kit.fontawesome.com/81581fb069.js"
             crossorigin="anonymous"
         ></script>
-        <title>dePEsca</title>
+
     </head>
+    <!-- fin head -->
+
+    <!-- body -->
     <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/logo.svg" alt="falta imagen">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">              
-                    <li><a href="destacados.html">Destacados</a></li>
-                    <li><a href="especies.html">Especies</a></li>
-                    <li><a href="lugares.html">Lugares</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="about.html">Nosotros</a></li>
-                </ul>
-            </nav>
-            <div class="search-container">
-                <div class="search-input-box">
-                    <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
-                    <a href="#"> <!--target="_blank">-->
-                        <i class="fa-solid fa-magnifying-glass icon"></i>
+        <!-- video de fondo -->
+        <div class="video-background">
+                <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
+                <iframe 
+                    src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen" 
+                    allowfullscreen
+                ></iframe>
+        </div>
+        <!-- header -->
+        <header class="header contenedores">
+            <!-- sobras header -->
+            <div class="shadow-header"></div>
+            <div class="grad1"></div>
+            <!-- caja izq -->
+            <div class="caja-header-izq">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="falta imagen">
                     </a>
-                </div>                            
+                </div>
+                <!-- navbar -->
+                <nav class="contenedor-nav">
+                    <ul class="nav-links">
+                        <li><a href="especies.html">Especies</a></li>
+                        <li><a href="lugares.html">Lugares</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="user_container">
-                <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
-                <div class="btn_login">
-                    <a href="login.html">Iniciar Sesion</a>
+            <!-- fin caja izq -->
+            <!-- caja der -->
+            <div class="caja-header-der">
+                <!-- buscador -->
+                <div class="search-container">
+                    <div class="search-input-box">
+                        <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
+                        <a href="#"> <!--target="_blank">-->
+                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn_signup">
-                    <a href="registro.html">Registrar</a>
+
+                <!-- usuario menu -->
+                <div class="user_container">
+                    <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
+                    <div class="btn_login">
+                        <a class="enlace" href="login.html">Ingresar</a>
+                    </div>
+                    <div class="btn_signup">
+                        <a class="enlace" href="registro.html">Registrarse</a>
+                    </div>
                 </div>
-            </div> 
+            </div>
+            <!-- fin caja der -->
         </header>
-    <main>
-        <br>
-        <br>
-    </main>
-    <footer>
-        <p>Todos los derechos reservados &#169 2024</p>
-    </footer>
-</body>
+        <!-- fin header -->
+
+        <!-- main -->
+        <main>
+            <!-- Formulario de registro -->
+            <form class="frm-registro" onsubmit="return validarRegistro()">
+                <div class="frm-group">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese aqui su nombre" required>
+                </div>
+                <div class="frm-group">
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa aqui su apellido" required>
+                </div>
+                <div class="frm-group">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa aqui su correo" required>
+                </div>
+                <div class="frm-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa aqui su contraseña" required>
+                </div>
+                <div class="frm-group">
+                    <label for="password2">Repita Contraseña:</label>
+                    <input type="password" id="password2" name="password2" placeholder="repita su contraseña" required>
+                </div>
+                <button type="submit">Registrate</button>
+            </form>
+        </main>
+        <!-- footer -->
+        <footer class="footer contenedores" >
+            <div class="shadow-footer"></div>
+            <div class="grad1-footer"></div>
+            <p>Todos los derechos reservados &#169 2024</p>
+        </footer>
+        <!-- fin footer -->
+        <!-- Script JavaScript -->
+        <script src="../JS/validarRegistro.js"></script>
+    </body>
 </html>

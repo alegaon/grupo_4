@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el formulario */
+.frm-registro {
+    padding: 30px;
+    margin: 50px auto;
+    width: 350px;
+    padding: 10px 30px 10px 10px;
+    background-color: rgba(13, 110, 253, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(13, 110, 253);
+}
+
+
+.frm-group {
+    margin-bottom: 20px;
+}
+
+.frm-group label {
+    display: block;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.frm-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(13, 110, 253);
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(13, 110, 253);
+    border: none;
+    border-radius: 3px;
+    color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    font-size: 18px;
+}
+
+.btn_signup {
+    visibility: hidden;
+}
