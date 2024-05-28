@@ -30,20 +30,21 @@
 
 <!-- body -->
 <body>
-    <!-- header -->
+    <!-- Header -->
     <header class="header contenedores">
-        <!-- sobras header -->
         <div class="shadow-header"></div>
         <div class="grad1"></div>
-        <!-- caja izq -->
+        
         <div class="caja-header-izq">
-            <!-- logo -->
+            <!-- Logo -->
             <div class="logo">
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="../img/logo.svg" alt="falta imagen">
                 </a>
             </div>
-            <!-- navbar -->
+            <!-- Botón de menú hamburguesa -->
+            <a onclick="openNav()" class="menu" href="#"></a>
+            <!-- Navbar -->
             <nav class="contenedor-nav">
                 <ul class="nav-links">
                     <li><a href="especies.html">Especies</a></li>
@@ -53,22 +54,20 @@
                 </ul>
             </nav>
         </div>
-        <!-- fin caja izq -->
-        <!-- caja der -->
+        
         <div class="caja-header-der">
-            <!-- buscador -->
+            <!-- Buscador -->
             <div class="search-container">
                 <div class="search-input-box">
                     <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
-                    <a href="#"> <!--target="_blank">-->
+                    <a href="#">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </a>
                 </div>
             </div>
-
-            <!-- usuario menu -->
+  
+            <!-- Usuario menú -->
             <div class="user_container">
-                <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
                 <div class="btn_login">
                     <a class="enlace" href="login.html">Ingresar</a>
                 </div>
@@ -77,7 +76,20 @@
                 </div>
             </div>
         </div>
-        <!-- fin caja der -->
+        
+        <!-- Overlay del menú móvil -->
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+              <a href="../index.html">Inicio</a>
+                <a href="especies.html">Especies</a>
+                <a href="lugares.html">Lugares</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="about.html">Nosotros</a>
+                <a href="login.html">Ingresar</a>
+                <a href="registro.html">Registrarse</a>
+            </div>
+        </div>
     </header>
     <!-- fin header -->
 
@@ -96,7 +108,7 @@
         <p>Todos los derechos reservados &#169 2024</p>
     </footer>
     <!-- fin footer -->
-
+    <script type = "text/javascript" src="../JS/nav.js"></script>
 </body>
 <!-- fin body -->
 </html>

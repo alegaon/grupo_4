@@ -51,3 +51,43 @@ button:hover {
 .btn_signup {
     visibility: hidden;
 }
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas más pequeñas (por ejemplo, teléfonos) */
+@media (min-width: 380px) and (max-width: 600px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frm-registro {
+        width: 30%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .frm-group input {
+        padding: 8px;
+    }
+    
+    button {
+        padding: 8px;
+    }
+}
+
+/* Para pantallas medianas (por ejemplo, tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frm-registro {
+        width: 30%;
+    }
+    
+
+}
