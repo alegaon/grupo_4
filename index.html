@@ -29,6 +29,9 @@
 
     <!-- css articulos -->
     <link rel="stylesheet" href="css/articulos.css">
+
+    <!-- css mediaQuery -->
+    <link rel="stylesheet" href="css/mediaQuery/mediaQuery-base.css">
     <!-- javascript -->
     <script
         src = "http://kit.fontawesome.com/81581fb069.js"
@@ -41,7 +44,7 @@
 <!-- body -->
 <body>
     <!-- video de fondo -->
-    <div class="video-background">
+    <div class="video-background mq-video">
             <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
             <iframe 
                 src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
@@ -52,7 +55,7 @@
             ></iframe>
       </div>
     <!-- Header -->
-    <header class="header contenedores">
+    <header class="header contenedores mq-header">
       <div class="shadow-header"></div>
       <div class="grad1"></div>
       
@@ -78,7 +81,7 @@
       
       <div class="caja-header-der">
           <!-- Buscador -->
-          <div class="search-container">
+          <div class="search-container mq-search">
               <div class="search-input-box">
                   <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
                   <a href="#">
@@ -114,8 +117,8 @@
   </header>
 
     <!-- main -->
-    <main class="main">
-      <div class="contenedor">
+    <main class="main mq-main">
+      <div class="contenedor mq-main-contenedor">
         <article class="articulo">
           <div class="imagen">
             <img src="img/articulos/bermejo.jpg" alt="Descripción de la imagen 1">
@@ -164,7 +167,7 @@
                 <span class="texto">Salvavidas</span>
               </div>
             </div>
-            <a href="CSS/pages/pagina1.html" class="btn">INFORMACION</a>
+            <a href="pages/detalles/detalles-1.html" class="btn">INFORMACION</a>
           </div>
         </article>
         
@@ -215,7 +218,7 @@
                 <span class="texto">Salvavidas</span>
               </div>
             </div>
-            <a href="CSS/pages/pagina1.html" class="btn">INFORMACION</a>
+            <a href="pages/detalles/detalles-1.html" class="btn">INFORMACION</a>
           </div>
         </article>
 
@@ -266,7 +269,7 @@
                 <span class="texto">Salvavidas</span>
               </div>
             </div>
-            <a href="CSS/pages/pagina1.html" class="btn">INFORMACION</a>
+            <a href="pages/detalles/detalles-1.html" class="btn">INFORMACION</a>
           </div>
         </article>
 
@@ -318,7 +321,7 @@
                 <span class="texto">Salvavidas</span>
               </div>
             </div>
-            <a href="CSS/pages/pagina1.html" class="btn">INFORMACION</a>
+            <a href="pages/detalles/detalles-1.html" class="btn">INFORMACION</a>
           </div>
         </article>
 
@@ -326,11 +329,18 @@
     <!-- fin main -->
 
     <!-- footer -->
-    <footer class="footer contenedores" >
-        <div class="shadow-footer"></div>
-        <div class="grad1-footer"></div>
-        <p class="derechos">Todos los derechos reservados &#169 2024</p>
+    <footer class="mq-footer">
+      <!-- <div class="grad1-footer mq-grad1-footer"> -->
+
+        <p class="derechos mq-footer-p">Todos los derechos reservados &#169 2024</p>
+      <!-- </div> -->
     </footer>
+    
+    <div class="shadow-footer mq-shadow-footer"></div>
+    <!-- <footer class="footer contenedores mq-footer" >
+    -->
+    <!-- </footer> -->
+
     <!-- fin footer -->
     <script type = "text/javascript" src="JS/nav.js"></script>
 </body>
