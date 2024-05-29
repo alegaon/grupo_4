@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cortina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 0, 104);
+    z-index: 1000;
+    transition: opacity 2s ease;
+}
+
+.cortina-logo {
+
+    height: 500px;
+
+    color: white;
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    animation: heartbeat 1s infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25%, 75% {
+        transform: scale(1.1);
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .cortina-logo {
+
+        max-width: 70%
+    }
+
+
+    
+}
