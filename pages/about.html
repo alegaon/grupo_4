@@ -16,6 +16,12 @@
     <!-- css footer (components) -->
     <link rel="stylesheet" href="../css/components/footer.css">
 
+    <!-- css mediaQuery -->
+    <link rel="stylesheet" href="../css/mediaQuery/mediaQuery-base.css">
+
+    <!-- css mediaQuery y gral -->
+    <link rel="stylesheet" href="../css/mediaQuery-about-gral.css">
+
     <!-- css about -->
     <link rel="stylesheet" href="../css/about.css">
 
@@ -30,15 +36,18 @@
 
 <!-- body -->
 <body>
+
+
+
     <!-- Header -->
-    <header class="header contenedores">
+    <header class="header contenedores mq-header">
         <div class="shadow-header"></div>
         <div class="grad1"></div>
         
         <div class="caja-header-izq">
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
                     <img src="../img/logo.svg" alt="falta imagen">
                 </a>
             </div>
@@ -57,7 +66,7 @@
         
         <div class="caja-header-der">
             <!-- Buscador -->
-            <div class="search-container">
+            <div class="search-container mq-search">
                 <div class="search-input-box">
                     <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
                     <a href="#">
@@ -94,7 +103,7 @@
     <!-- fin header -->
 
     <!-- main -->
-    <main class="main">
+    <main class="main mq-main">
         <h1>Entrega de Front-END</h1>
         <h3>Un trabajo de Alejandro Gaon, Edith Balsa y Alvaro Cubiella para Codo a Codo.</h3>
    
@@ -102,13 +111,22 @@
     <!-- fin main -->
 
     <!-- footer -->
-    <footer class="footer contenedores" >
-        <div class="shadow-footer"></div>
-        <div class="grad1-footer"></div>
-        <p>Todos los derechos reservados &#169 2024</p>
-    </footer>
-    <!-- fin footer -->
+    <div class="shadow-footer mq-shadow-footer"></div>
+    <footer class="mq-footer">
+        <!-- <div class="grad1-footer mq-grad1-footer"> -->
+  
+          <p class="derechos mq-footer-p">Todos los derechos reservados &#169 2024</p>
+        <!-- </div> -->
+      </footer>
+      
+      <!-- <footer class="footer contenedores mq-footer" >
+      -->
+      <!-- </footer> -->
     <script type = "text/javascript" src="../JS/nav.js"></script>
+
+        <!-- imagen bg -->
+        <div class="imagen-bg"></div>
+        <!-- fin imagen bg -->
 </body>
 <!-- fin body -->
 </html>

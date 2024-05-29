@@ -1,0 +1,12 @@
+.contenedor-descripcion {
+    /* border: 1px solid black; */
+    
+    margin-top: 20px;
+    padding: 20px;
+
+    height: 500px;
+
+    box-shadow: var(--sombra-caja);
+
+    overflow: hidden;
+}

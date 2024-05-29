@@ -1,3 +1,40 @@
+    /* footer */
+    .mq-footer{
+        margin: 0 auto;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mq-shadow-footer{
+        display: none;
+
+        position: relative;
+        bottom: 20px;
+
+    }
+
+    .mq-grad1-footer{ 
+        width: 100%;
+
+        display: flex;
+
+        position: static;
+        bottom: 20px;
+
+
+    }
+    .mq-footer-p {
+        color: white;
+
+        position: relative;
+        bottom: 20px;
+    }
+
+    /* fin footer */
+
 @media only screen and (max-width: 992px) {
     /* header */
 

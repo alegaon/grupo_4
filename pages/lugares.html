@@ -27,6 +27,14 @@
     <!-- css footer (components) -->
     <link rel="stylesheet" href="../css/components/footer.css">
 
+    <!-- css articulos -->
+    <link rel="stylesheet" href="../css/articulos.css">
+
+    <!-- css mediaQuery -->
+    <link rel="stylesheet" href="../css/mediaQuery/mediaQuery-base.css">
+
+    <!-- css footer -->
+    <link rel="stylesheet" href="../css/footer.css">
     <!-- javascript -->
     <script
         src = "http://kit.fontawesome.com/81581fb069.js"
@@ -39,7 +47,7 @@
 <!-- body -->
 <body>
     <!-- video de fondo -->
-    <div class="video-background">
+    <div class="video-background mq-video">
             <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
             <iframe 
                 src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
@@ -49,71 +57,90 @@
                 allowfullscreen
             ></iframe>
       </div>
-    <!-- header -->
-    <header class="header contenedores">
-        <!-- sobras header -->
-        <div class="shadow-header"></div>
-        <div class="grad1"></div>
-        <!-- caja izq -->
-        <div class="caja-header-izq">
-            <!-- logo -->
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/logo.svg" alt="falta imagen">
-                </a>
-            </div>
-            <!-- navbar -->
-            <nav class="contenedor-nav">
-                <ul class="nav-links">
-                    <li><a href="especies.html">Especies</a></li>
-                    <li><a href="lugares.html">Lugares</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="about.html">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- fin caja izq -->
-        <!-- caja der -->
-        <div class="caja-header-der">
-            <!-- buscador -->
-            <div class="search-container">
-                <div class="search-input-box">
-                    <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
-                    <a href="#"> <!--target="_blank">-->
-                        <i class="fa-solid fa-magnifying-glass icon"></i>
-                    </a>
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="header contenedores mq-header">
+      <div class="shadow-header"></div>
+      <div class="grad1"></div>
+      
+      <div class="caja-header-izq">
+          <!-- Logo -->
+          <div class="logo">
+              <a href="../index.html">
+                  <img src="../img/logo.svg" alt="falta imagen">
+              </a>
+          </div>
+          <!-- Botón de menú hamburguesa -->
+          <a onclick="openNav()" class="menu" href="#"></a>
+          <!-- Navbar -->
+          <nav class="contenedor-nav">
+              <ul class="nav-links">
+                  <li><a href="#">Especies</a></li>
+                  <li><a href="../pages/lugares.html">Lugares</a></li>
+                  <li><a href="../pages/contacto.html">Contacto</a></li>
+                  <li><a href="../pages/about.html">Nosotros</a></li>
+              </ul>
+          </nav>
+      </div>
+      
+      <div class="caja-header-der">
+          <!-- Buscador -->
+          <div class="search-container mq-search">
+              <div class="search-input-box">
+                  <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
+                  <a href="#">
+                      <i class="fa-solid fa-magnifying-glass icon"></i>
+                  </a>
+              </div>
+          </div>
 
-            <!-- usuario menu -->
-            <div class="user_container">
-                <!--Coloco boton de ingresar y registrar a la derecha del menubar-->
-                <div class="btn_login">
-                    <a class="enlace" href="login.html">Ingresar</a>
-                </div>
-                <div class="btn_signup">
-                    <a class="enlace" href="registro.html">Registrarse</a>
-                </div>
-            </div>
-        </div>
-        <!-- fin caja der -->
-    </header>
-    <!-- fin header -->
+          <!-- Usuario menú -->
+          <div class="user_container">
+              <div class="btn_login">
+                  <a class="enlace" href="../pages/login.html">Ingresar</a>
+              </div>
+              <div class="btn_signup">
+                  <a class="enlace" href="../pages/registro.html">Registrarse</a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Overlay del menú móvil -->
+      <div class="overlay" id="mobile-menu">
+          <a onclick="closeNav()" class="close" href="#">&times;</a>
+          <div class="overlay-content">
+            <a href="../index.html">Inicio</a>
+              <a href="../pages/especies.html">Especies</a>
+              <a href="#">Lugares</a>
+              <a href="../pages/contacto.html">Contacto</a>
+              <a href="../pages/about.html">Nosotros</a>
+              <a href="../pages/login.html">Ingresar</a>
+              <a href="../pages/registro.html">Registrarse</a>
+          </div>
+      </div>
+  </header>
 
     <!-- main -->
-    <main class="main">
-   
+    <main class="main mq-main">
+      
+
     </main>
     <!-- fin main -->
 
     <!-- footer -->
-    <footer class="footer contenedores" >
-        <div class="shadow-footer"></div>
-        <div class="grad1-footer"></div>
-        <p>Todos los derechos reservados &#169 2024</p>
-    </footer>
-    <!-- fin footer -->
+    <footer class="mq-footer">
+      <!-- <div class="grad1-footer mq-grad1-footer"> -->
 
+        <p class="derechos mq-footer-p">Todos los derechos reservados &#169 2024</p>
+      <!-- </div> -->
+    </footer>
+    
+    <div class="shadow-footer mq-shadow-footer"></div>
+    <!-- <footer class="footer contenedores mq-footer" >
+    -->
+    <!-- </footer> -->
+
+    <!-- fin footer -->
+    <script type = "text/javascript" src="../JS/nav.js"></script>
 </body>
 <!-- fin body -->
 </html>

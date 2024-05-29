@@ -1,0 +1,45 @@
+/* main */
+.mq-main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* footer */
+.mq-footer{
+    color: white;
+
+    margin: 0 auto;
+    padding: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.mq-shadow-footer{
+    display: flex;
+
+    background: black;
+
+    opacity: .66;
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: -1;
+
+}
+
+.mq-footer-p {
+
+    position: relative;
+    bottom: 20px;
+}
+

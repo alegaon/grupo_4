@@ -1,5 +1,5 @@
 main {
-  margin-top: 100px; /* Ajusta este valor según la altura de tu header */
+  margin-top: 100px;
 }
 
 .header {
@@ -30,9 +30,9 @@ main {
 }
 
 .imagen img {
-  display: block; /* Cambiado de flex a block */
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  width: 100%; 
+  height: auto; 
   opacity: inherit;
   border-top-right-radius: 14px;
   border-top-left-radius: 14px;

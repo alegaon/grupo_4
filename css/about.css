@@ -1,9 +1,22 @@
 body {
-    /* Cambia esta ruta a la de tu imagen */
-    background-image: url('../img/los_3.jpg');
-    /* Asegura que la imagen cubra toda el área del body */
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../img/los_3.jpg') no-repeat center center fixed;
+    background-size: cover; /* O puedes usar "contain" según tus necesidades */
 }
+
+/* .imagen-bg {
+    background: url('../img/los_3.jpg') no-repeat center center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+
+} */
 
 h1, h3 {
     margin: 10px;

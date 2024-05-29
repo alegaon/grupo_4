@@ -29,6 +29,10 @@
 
     <!-- css articulos -->
     <link rel="stylesheet" href="../css/login.css">
+
+    <!-- css mediaQuery -->
+    <link rel="stylesheet" href="../css/mediaQuery/mediaQuery-base.css">
+
     <!-- javascript -->
     <script
         src = "http://kit.fontawesome.com/81581fb069.js"
@@ -41,7 +45,7 @@
 <!-- body -->
 <body>
     <!-- video de fondo -->
-    <div class="video-background">
+    <div class="video-background mq-video">
             <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
             <iframe 
                 src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
@@ -52,14 +56,14 @@
             ></iframe>
       </div>
         <!-- Header -->
-        <header class="header contenedores">
+        <header class="header contenedores mq-header">
             <div class="shadow-header"></div>
             <div class="grad1"></div>
             
             <div class="caja-header-izq">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <img src="../img/logo.svg" alt="falta imagen">
                     </a>
                 </div>
@@ -78,7 +82,7 @@
             
             <div class="caja-header-der">
                 <!-- Buscador -->
-                <div class="search-container">
+                <div class="search-container mq-search">
                     <div class="search-input-box">
                         <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
                         <a href="#">
@@ -115,7 +119,7 @@
         <!-- fin header -->
 
     <!-- main -->
-    <main class="main">
+    <main class="main mq-main">
       <!-- Formulario de inicio de sesión -->
       <form class="login-frm">
         <div class="frm-group">

@@ -1,0 +1,48 @@
+.especies {
+    height: 300px;
+
+    box-shadow: var(--sombra-caja);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.caja-texto{
+    display: block;
+}
+
+.slider-caja {
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.slider--inner {
+    margin: 0 auto;
+    padding: 0;
+    
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+
+    align-items: center;
+    
+    position: relative;
+    left: 0;
+    
+}
+
+.slider--inner > img {
+    max-width: 100%;
+    height: 100%;
+
+    aspect-ratio: 16/9;
+    object-fit: fill;
+    
+}
+
