@@ -4,386 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dePEsca</title>
-
-    <!-- css index -->
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
-    
-    <!-- css main -->
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
-    
-    <!-- css general -->
-    <!-- <link rel="stylesheet" href="css/index/general.css"> -->
-
-    <!-- css google font (components) -->
     <link rel="stylesheet" href="css/components/font.css">
-    <!-- css base (components) -->
-    <link rel="stylesheet" href="css/components/base.css">
-    <!-- body video  background -->
-    <link rel="stylesheet" href="css/components/video-bg.css">
-    <!-- css header (components) -->
-    <link rel="stylesheet" href="css/components/header.css">
-    <!-- css main (components) -->
-    <link rel="stylesheet" href="css/components/main.css">
-    <!-- css footer (components) -->
-    <link rel="stylesheet" href="css/components/footer.css">
-
-    <!-- css articulos -->
-    <link rel="stylesheet" href="css/articulos.css">
-
-    <!-- css mediaQuery -->
-    <link rel="stylesheet" href="css/mediaQuery/mediaQuery-base.css">
-    <!-- css cortina inicial -->
-    <link rel="stylesheet" href="css/cortina.css">
-
-    <!-- css scroll -->
-    <link rel="stylesheet" href="css/scroll.css">
-    
-    <!-- javascript -->
+    <link rel="stylesheet" href="css/main_001.css">
     <script
         src = "http://kit.fontawesome.com/81581fb069.js"
         crossorigin="anonymous"
     ></script>
-
 </head>
-<!-- fin head -->
-
-<!-- body -->
-<body>
-  
-    <!-- video de fondo -->
-    <div class="video-background mq-video">
-            <!-- youtube https://www.youtube.com/watch?v=2dHVLi16VUA -->
-            <iframe 
-                src="https://www.youtube.com/embed/2dHVLi16VUA?si=fc41bL8KZ204Vpkb&amp;controls=0&autoplay=1&mute=1" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="autoplay; fullscreen" 
-                allowfullscreen
-            ></iframe>
-      </div>
-    <!-- Header -->
+<body class="bg-img">
     <header class="header contenedores mq-header">
-      <div class="shadow-header"></div>
-      <div class="grad1"></div>
-      
-      <div class="caja-header-izq">
-          <!-- Logo -->
-          <div class="logo">
-              <a href="index.html">
-                  <img src="img/logo.svg" alt="falta imagen">
-              </a>
-          </div>
-          <!-- Botón de menú hamburguesa -->
-          <a onclick="openNav()" class="menu" href="#"></a>
-          <!-- Navbar -->
-          <nav class="contenedor-nav">
-              <ul class="nav-links">
-                  <li><a href="pages/especies.html">Especies</a></li>
-                  <li><a href="pages/lugares.html">Lugares</a></li>
-                  <li><a href="pages/contacto.html">Contacto</a></li>
-                  <li><a href="pages/about.html">Nosotros</a></li>
-              </ul>
-          </nav>
-      </div>
-      
-      <div class="caja-header-der">
-          <!-- Buscador -->
-          <div class="search-container mq-search">
-              <div class="search-input-box">
-                  <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
-                  <a href="#">
-                      <i class="fa-solid fa-magnifying-glass icon"></i>
-                  </a>
-              </div>
-          </div>
-
-          <!-- Usuario menú -->
-          <div class="user_container">
-              <div class="btn_login">
-                  <a class="enlace" href="pages/login.html">Ingresar</a>
-              </div>
-              <div class="btn_signup">
-                  <a class="enlace" href="pages/registro.html">Registrarse</a>
-              </div>
-          </div>
-      </div>
-      
-      <!-- Overlay del menú móvil -->
-      <div class="overlay" id="mobile-menu">
-          <a onclick="closeNav()" class="close" href="#">&times;</a>
-          <div class="overlay-content">
-            <a href="index.html">Inicio</a>
-              <a href="pages/especies.html">Especies</a>
-              <a href="pages/lugares.html">Lugares</a>
-              <a href="pages/contacto.html">Contacto</a>
-              <a href="pages/about.html">Nosotros</a>
-              <a href="pages/login.html">Ingresar</a>
-              <a href="pages/registro.html">Registrarse</a>
-          </div>
-      </div>
-  </header>
-
-    <!-- main -->
+        <div class="shadow-header"></div>
+        <div class="grad1"></div>
+        <div class="caja-header-izq">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="falta imagen">
+                </a>
+            </div>
+            <!-- Botón de menú hamburguesa -->
+            <a onclick="openNav()" class="menu" href="#"></a>
+            <!-- Navbar -->
+            <nav class="contenedor-nav">
+                <ul class="nav-links">
+                    <li><a href="pages/especies.html">Especies</a></li>
+                    <li><a href="pages/lugares.html">Lugares</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/about.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="caja-header-der">
+            <!-- Buscador -->
+            <div class="search-container mq-search">
+                <div class="search-input-box">
+                    <input type="text" name="busqueda" placeholder="Buscar" autocomplete="off">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Usuario menú -->
+            <div class="user_container">
+                <div class="btn_login">
+                    <a class="enlace" href="pages/login.html">Ingresar</a>
+                </div>
+                <div class="btn_signup">
+                    <a class="enlace" href="pages/registro.html">Registrarse</a>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay del menú móvil -->
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="pages/especies.html">Especies</a>
+                <a href="pages/lugares.html">Lugares</a>
+                <a href="pages/contacto.html">Contacto</a>
+                <a href="pages/about.html">Nosotros</a>
+                <a href="pages/login.html">Ingresar</a>
+                <a href="pages/registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
     <main class="main mq-main">
-      <div class="contenedor mq-main-contenedor">
-        <article class="articulo">
-          <div class="imagen">
-            <img src="img/articulos/bermejo.jpg" alt="Descripción de la imagen 1">
-          </div>
-          <div class = "datos_lugar">
-            <h2>PESCA EN CHACO</h2>
-            <p>
-              Vivi una experiencia unica en el Rio Bermejo
-              con los mejores surubi!!
-            </p>
-            <div class="iconos">
-              <div class="icono">
-                <img src="img/icons/camaicono.jpg">
-                <span class="texto">Comida</span>
+        <section class="contenedor mq-main-contenedor">
+            <article class="articulo publicados">
+              <div class="imagen">
+                <img src="img/articulos/bermejo.jpg" alt="Descripción de la imagen 1">
               </div>
-              <div class="icono">
-                <img src="img/icons/embarcacion icono.jpg">
-                <span class="texto">Embarcacion</span>
-              </div> 
-              <div class="icono">
-                <img src="img/icons/guia de pesca2.jpg">
-                <span class="texto">Guia</span>
+              <div class = "datos_lugar">
+                <h2>PESCA EN CHACO</h2>
+                <p>
+                  Vivi una experiencia unica en el Rio Bermejo
+                  con los mejores surubi!!
+                </p>
+                <div class="iconos">
+                  <div class="icono">
+                    <img src="img/icons/camaicono.jpg">
+                    <span class="texto">Comida</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/embarcacion icono.jpg">
+                    <span class="texto">Embarcacion</span>
+                  </div> 
+                  <div class="icono">
+                    <img src="img/icons/guia de pesca2.jpg">
+                    <span class="texto">Guia</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/equipodepescaicono.jpg">
+                    <span class="texto">Equipos</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/carnadaicono.jpg">
+                    <span class="texto">Carnada</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\wificono.jpg">
+                    <span class="texto">Wifi</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\camaicono.jpg">
+                    <span class="texto">Hospedaje</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\atencionicono.jpg">
+                    <span class="texto">Atencion</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\chalecoicono.jpg">
+                    <span class="texto">Salvavidas</span>
+                  </div>
+                </div>
+                <a href="pages/detalles/detalles-1.html" 
+                class="btn"
+                target="_blank"
+                >
+                INFORMACION
+              </a>
               </div>
-              <div class="icono">
-                <img src="img/icons/equipodepescaicono.jpg">
-                <span class="texto">Equipos</span>
+            </article>
+            
+            <article class="articulo archivados">
+              <div class="imagen">
+                <img src="img/articulos/corrientes.jpg" alt="Descripción de la imagen 1">
               </div>
-              <div class="icono">
-                <img src="img/icons/carnadaicono.jpg">
-                <span class="texto">Carnada</span>
+              <div class = "datos_lugar">
+                <h2>PESCA EN CORRIENTES</h2>
+                <p>
+                  Los dorados mas grandes y las mejores competencias en Paso de la Patria!
+                </p>
+                <div class="iconos">
+                  <div class="icono">
+                    <img src="img/icons/camaicono.jpg">
+                    <span class="texto">Comida</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/embarcacion icono.jpg">
+                    <span class="texto">Embarcacion</span>
+                  </div> 
+                  <div class="icono">
+                    <img src="img/icons/guia de pesca2.jpg">
+                    <span class="texto">Guia</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/equipodepescaicono.jpg">
+                    <span class="texto">Equipos</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/carnadaicono.jpg">
+                    <span class="texto">Carnada</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\wificono.jpg">
+                    <span class="texto">Wifi</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\camaicono.jpg">
+                    <span class="texto">Hospedaje</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\atencionicono.jpg">
+                    <span class="texto">Atencion</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\chalecoicono.jpg">
+                    <span class="texto">Salvavidas</span>
+                  </div>
+                </div>
+                <a href="pages/detalles/detalles-1.html" 
+                class="btn"
+                target="_blank"
+                >INFORMACION</a>
               </div>
-              <div class="icono">
-                <img src="img/icons/\wificono.jpg">
-                <span class="texto">Wifi</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\camaicono.jpg">
-                <span class="texto">Hospedaje</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\atencionicono.jpg">
-                <span class="texto">Atencion</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\chalecoicono.jpg">
-                <span class="texto">Salvavidas</span>
-              </div>
-            </div>
-            <a href="pages/detalles/detalles-1.html" 
-            class="btn"
-            target="_blank"
-            >
-            INFORMACION
-          </a>
-          </div>
-        </article>
-        
-        <article class="articulo">
-          <div class="imagen">
-            <img src="img/articulos/corrientes.jpg" alt="Descripción de la imagen 1">
-          </div>
-          <div class = "datos_lugar">
-            <h2>PESCA EN CORRIENTES</h2>
-            <p>
-              Los dorados mas grandes y las mejores competencias en Paso de la Patria!
-            </p>
-            <div class="iconos">
-              <div class="icono">
-                <img src="img/icons/camaicono.jpg">
-                <span class="texto">Comida</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/embarcacion icono.jpg">
-                <span class="texto">Embarcacion</span>
-              </div> 
-              <div class="icono">
-                <img src="img/icons/guia de pesca2.jpg">
-                <span class="texto">Guia</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/equipodepescaicono.jpg">
-                <span class="texto">Equipos</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/carnadaicono.jpg">
-                <span class="texto">Carnada</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\wificono.jpg">
-                <span class="texto">Wifi</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\camaicono.jpg">
-                <span class="texto">Hospedaje</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\atencionicono.jpg">
-                <span class="texto">Atencion</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\chalecoicono.jpg">
-                <span class="texto">Salvavidas</span>
-              </div>
-            </div>
-            <a href="pages/detalles/detalles-1.html" 
-            class="btn"
-            target="_blank"
-            >INFORMACION</a>
-          </div>
-        </article>
+            </article>
 
-        <article class="articulo">
-          <div class="imagen">
-            <img src="img/articulos/pacu.jpg" alt="Descripción de la imagen 1">
-          </div>
-          <div class = "datos_lugar">
-            <h2>PESCA EN SANTA FE</h2>
-            <p>
-              Un lugar hermoso el Rio Parana te ofrece los pacu mas lindos!!
-            </p>
-            <div class="iconos">
-              <div class="icono">
-                <img src="img/icons/camaicono.jpg">
-                <span class="texto">Comida</span>
+            <article class="articulo agregar">
+              <div class="imagen">
+                <img src="img/articulos/pacu.jpg" alt="Descripción de la imagen 1">
               </div>
-              <div class="icono">
-                <img src="img/icons/embarcacion icono.jpg">
-                <span class="texto">Embarcacion</span>
-              </div> 
-              <div class="icono">
-                <img src="img/icons/guia de pesca2.jpg">
-                <span class="texto">Guia</span>
+              <div class = "datos_lugar">
+                <h2>PESCA EN SANTA FE</h2>
+                <p>
+                  Un lugar hermoso el Rio Parana te ofrece los pacu mas lindos!!
+                </p>
+                <div class="iconos">
+                  <div class="icono">
+                    <img src="img/icons/camaicono.jpg">
+                    <span class="texto">Comida</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/embarcacion icono.jpg">
+                    <span class="texto">Embarcacion</span>
+                  </div> 
+                  <div class="icono">
+                    <img src="img/icons/guia de pesca2.jpg">
+                    <span class="texto">Guia</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/equipodepescaicono.jpg">
+                    <span class="texto">Equipos</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/carnadaicono.jpg">
+                    <span class="texto">Carnada</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\wificono.jpg">
+                    <span class="texto">Wifi</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\camaicono.jpg">
+                    <span class="texto">Hospedaje</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\atencionicono.jpg">
+                    <span class="texto">Atencion</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\chalecoicono.jpg">
+                    <span class="texto">Salvavidas</span>
+                  </div>
+                </div>
+                <a href="pages/detalles/detalles-1.html" 
+                class="btn"
+                target="_blank"
+                >
+                INFORMACION</a>
               </div>
-              <div class="icono">
-                <img src="img/icons/equipodepescaicono.jpg">
-                <span class="texto">Equipos</span>
+            </article>
+            <!-- 
+            <article class="articulo">
+              <div class="imagen">
+                <img src="img/articulos/PEZ LIMON.jpg" alt="Descripción de la imagen 1">
               </div>
-              <div class="icono">
-                <img src="img/icons/carnadaicono.jpg">
-                <span class="texto">Carnada</span>
+              <div class = "datos_lugar">
+                <h2>PESCA EN MAR DEL PLATA</h2>
+                <p>
+                  Veni a luchar con una de las especies que mas 
+                  pelea te va a dar en Mar del Plata.
+                </p>
+                <div class="iconos">
+                  <div class="icono">
+                    <img src="img/icons/camaicono.jpg">
+                    <span class="texto">Comida</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/embarcacion icono.jpg">
+                    <span class="texto">Embarcacion</span>
+                  </div> 
+                  <div class="icono">
+                    <img src="img/icons/guia de pesca2.jpg">
+                    <span class="texto">Guia</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/equipodepescaicono.jpg">
+                    <span class="texto">Equipos</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/carnadaicono.jpg">
+                    <span class="texto">Carnada</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\wificono.jpg">
+                    <span class="texto">Wifi</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\camaicono.jpg">
+                    <span class="texto">Hospedaje</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\atencionicono.jpg">
+                    <span class="texto">Atencion</span>
+                  </div>
+                  <div class="icono">
+                    <img src="img/icons/\chalecoicono.jpg">
+                    <span class="texto">Salvavidas</span>
+                  </div>
+                </div>
+                <a href="pages/detalles/detalles-1.html" 
+                class="btn"
+                target="_blank"
+                >
+                INFORMACION</a>
               </div>
-              <div class="icono">
-                <img src="img/icons/\wificono.jpg">
-                <span class="texto">Wifi</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\camaicono.jpg">
-                <span class="texto">Hospedaje</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\atencionicono.jpg">
-                <span class="texto">Atencion</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\chalecoicono.jpg">
-                <span class="texto">Salvavidas</span>
-              </div>
-            </div>
-            <a href="pages/detalles/detalles-1.html" 
-            class="btn"
-            target="_blank"
-            >
-            INFORMACION</a>
-          </div>
-        </article>
-
-        <article class="articulo">
-          <div class="imagen">
-            <img src="img/articulos/PEZ LIMON.jpg" alt="Descripción de la imagen 1">
-          </div>
-          <div class = "datos_lugar">
-            <h2>PESCA EN MAR DEL PLATA</h2>
-            <p>
-              Veni a luchar con una de las especies que mas 
-              pelea te va a dar en Mar del Plata.
-            </p>
-            <div class="iconos">
-              <div class="icono">
-                <img src="img/icons/camaicono.jpg">
-                <span class="texto">Comida</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/embarcacion icono.jpg">
-                <span class="texto">Embarcacion</span>
-              </div> 
-              <div class="icono">
-                <img src="img/icons/guia de pesca2.jpg">
-                <span class="texto">Guia</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/equipodepescaicono.jpg">
-                <span class="texto">Equipos</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/carnadaicono.jpg">
-                <span class="texto">Carnada</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\wificono.jpg">
-                <span class="texto">Wifi</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\camaicono.jpg">
-                <span class="texto">Hospedaje</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\atencionicono.jpg">
-                <span class="texto">Atencion</span>
-              </div>
-              <div class="icono">
-                <img src="img/icons/\chalecoicono.jpg">
-                <span class="texto">Salvavidas</span>
-              </div>
-            </div>
-            <a href="pages/detalles/detalles-1.html" 
-            class="btn"
-            target="_blank"
-            >
-            INFORMACION</a>
-          </div>
-        </article>
-
+            </article>
+             -->
+            
+        </section>
     </main>
-    <!-- fin main -->
-
-    <!-- footer -->
     <footer class="mq-footer">
-      <!-- <div class="grad1-footer mq-grad1-footer"> -->
-
         <p class="derechos mq-footer-p">Todos los derechos reservados &#169 2024</p>
-      <!-- </div> -->
-    </footer>
-    
-    <div class="shadow-footer mq-shadow-footer"></div>
-    <!-- <footer class="footer contenedores mq-footer" >
-    -->
-    <!-- </footer> -->
-
-
-    <!-- cortina inicial -->
-    <!-- <div class="cortina">
-      
-      <div class="logo cortina-logo">
-        <a href="index.html">
-            <img src="img/logo.svg" alt="falta imagen">
-        </a>
-      </div>
-
-    </div> -->
-
-
-      <!-- Logo -->
-
-    <!-- fin cortina inicial -->
-
-    <!-- fin footer -->
+    </footer>    
     <script type = "text/javascript" src="JS/nav.js"></script>
     <script type = "text/javascript" src="JS/cortina.js"></script>
 </body>
-<!-- fin body -->
 </html>
