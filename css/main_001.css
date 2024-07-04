@@ -611,3 +611,18 @@ main {
 
 }
 
+/* css para manejar index.js */
+.contenedor-articulos{
+    color: white;
+
+}
+
+.publicados{
+    color: white;
+
+}
+
+.archivado{
+    color: white;
+
+}
